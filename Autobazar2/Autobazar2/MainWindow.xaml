@@ -1,0 +1,65 @@
+﻿<Window x:Class="Autobazar2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="Autobazar" Height="450" Width="800">
+    <Grid>
+        <Button Content="Vybrat soubor"
+                HorizontalAlignment="Left"
+                Margin="648,82,0,0"
+                VerticalAlignment="Top"
+                Height="76"
+                Width="124"
+                Click="FSButton"
+                
+                RenderTransformOrigin="0.52,0.556"/>
+        <DataGrid x:Name="prodejeaut"
+                  Margin="99,22,181,217"
+                  IsReadOnly="True"
+                  ColumnWidth="*"
+                  HeadersVisibility="Column" 
+                  IsManipulationEnabled="True" />
+        <DataGrid x:Name="prodejVikend"
+                  Margin="208,222,290,10"
+                  IsReadOnly="True"
+                  ClipboardCopyMode="ExcludeHeader"
+                  ColumnWidth="*"
+                  RowHeaderWidth="0"
+                  AutoGenerateColumns="False"
+                  GridLinesVisibility="None"
+                  BorderThickness="0"
+                  HeadersVisibility="Column" >
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="BorderThickness" Value="5" />
+                    <Setter Property="Background" Value="Gray" />
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.Header>
+                        <TextBlock TextAlignment="Center">
+                            <Run Text="Název modelu"/>
+                            <LineBreak/>
+                            <Run Text="Cena bez DPH"/>
+                        </TextBlock>
+                    </DataGridTemplateColumn.Header>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Model}" />
+                                <TextBlock Text="{Binding Cena, StringFormat=N, ConverterCulture=cs-CZ}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Cena s DPH" Binding="{Binding CenaDPH}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Ukončit" HorizontalAlignment="Left" Margin="648,285,0,0" VerticalAlignment="Top" Height="76" Width="124" Click="Button_Click"/>
+
+    </Grid>
+</Window>

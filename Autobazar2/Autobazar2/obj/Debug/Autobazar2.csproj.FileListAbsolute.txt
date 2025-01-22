@@ -1,0 +1,14 @@
+C:\Users\maxsi\source\repos\Autobazar2\Autobazar2\bin\Debug\Autobazar2.exe.config
+C:\Users\maxsi\source\repos\Autobazar2\Autobazar2\bin\Debug\Autobazar2.exe
+C:\Users\maxsi\source\repos\Autobazar2\Autobazar2\bin\Debug\Autobazar2.pdb
+C:\Users\maxsi\source\repos\Autobazar2\Autobazar2\obj\Debug\Autobazar2.csproj.AssemblyReference.cache
+C:\Users\maxsi\source\repos\Autobazar2\Autobazar2\obj\Debug\MainWindow.g.cs
+C:\Users\maxsi\source\repos\Autobazar2\Autobazar2\obj\Debug\App.g.cs
+C:\Users\maxsi\source\repos\Autobazar2\Autobazar2\obj\Debug\Autobazar2_MarkupCompile.cache
+C:\Users\maxsi\source\repos\Autobazar2\Autobazar2\obj\Debug\MainWindow.baml
+C:\Users\maxsi\source\repos\Autobazar2\Autobazar2\obj\Debug\Autobazar2.g.resources
+C:\Users\maxsi\source\repos\Autobazar2\Autobazar2\obj\Debug\Autobazar2.Properties.Resources.resources
+C:\Users\maxsi\source\repos\Autobazar2\Autobazar2\obj\Debug\Autobazar2.csproj.GenerateResource.cache
+C:\Users\maxsi\source\repos\Autobazar2\Autobazar2\obj\Debug\Autobazar2.csproj.CoreCompileInputs.cache
+C:\Users\maxsi\source\repos\Autobazar2\Autobazar2\obj\Debug\Autobazar2.exe
+C:\Users\maxsi\source\repos\Autobazar2\Autobazar2\obj\Debug\Autobazar2.pdb
